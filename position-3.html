@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>POSITION-3</title>
+<style type="text/css">
+.text{
+	border:1px solid blak;
+	height:120px ;width:120px ;
+	font-weight:bold;
+}
+#c1{
+	background:orange;
+	position:absolute;
+	left: 10px; top: 10px; /* default */
+	
+}
+
+#c2{
+	background:steelblue;
+	position:absolute;
+	top: 70px; left:40px ;
+	z-index: 2;
+
+}
+
+#c3{
+	background:lightgreen;
+	position: absolute;
+	top: 130px; left: 70px;
+	z-index: 5;
+}
+
+</style>
+</head>
+
+<body>
+<div class="text" id="c1">Z-index: 1</div>
+<div class="text" id="c2">Z-index: 2</div>
+<div class="text" id="c3">Z-index: 3</div>
+
+</body>
+</html>
