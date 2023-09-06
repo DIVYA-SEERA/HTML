@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAYOUT-4</title>
+</head>
+<style type="text/css">
+
+.parent{
+	height:100vh; width:700px;
+	display:flex;
+	flex-flow: row wrap;
+	border: 2px solid black;
+	justify-content:space-evenly;
+    align-content:space-evenly;
+    background: grey;
+} 
+.child{
+	background:yellow;
+	color:darkblue;
+	text-align: center;
+	height:100px; width:100px;
+	border: 1px solid black;
+}
+
+.parent > div:nth-child(3),.parent > div:nth-child(4),
+.parent > div:nth-child(5),.parent > div:nth-child(6)
+{
+  width:15% ; height: 10%;
+}
+.parent > div:nth-child(1){
+	width:30% ; height:20% ;
+
+}
+.parent > div:nth-child(2){
+	width:65% ; height:20%;
+	
+}
+.parent > div:nth-child(7){
+	width:30% ; height:10%;
+	
+}
+.parent > div:nth-child(8){
+	width:30% ; height:40% ;
+	
+}
+.parent > div:nth-child(9){
+	width:48% ; height:40% ;
+	
+}
+.parent > div:nth-child(10){
+	width:15% ; height:40% ;
+	
+}
+
+.container{
+	display: inline-block;
+	position: absolute;
+	left: 20%;
+	
+}
+
+
+</style>
+
+<body>
+<div class="container">
+<div class="parent">
+ <div class="child" >ONE </div>
+ <div class="child" >TWO</div>
+ <div class="child">THREE</div>
+ <div class="child">FOUR</div>
+ <div class="child">FIVE</div>
+ <div class="child" >SIX</div>
+ <div class="child">SEVEN</div>
+ <div class="child" >EIGHT</div>
+ <div class="child" >NINE</div>
+ <div class="child" >TEN</div>
+</div>
+</div>
+</body>
+</html>
